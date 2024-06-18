@@ -541,7 +541,16 @@ input:checked ~ .slide {
         padding: 0;  
     }
 
-    .church-name-container{
-        margin-top: 20px;
+    .church-name-container {
+        position: absolute;
+        left: 200px;
+        font-family: "Montserrat";
+        background-color: none;
+        color: white;
+        padding: 10px 0;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
     }
 }
