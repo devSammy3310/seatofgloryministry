@@ -504,7 +504,7 @@ input:checked ~ .slide {
     }
 
     .church-name h1 {
-        font-size: 1rem;
+        font-size: 0.4rem;
     }
 
     .branch {
