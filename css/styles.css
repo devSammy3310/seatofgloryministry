@@ -544,7 +544,6 @@ input:checked ~ .slide {
     .church-name-container {
         position: absolute;
         width: 200px;
-        left: 100px;
         font-family: "Montserrat";
         background-color: none;
         color: white;
@@ -553,5 +552,38 @@ input:checked ~ .slide {
         flex: 1;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .nav{
+        padding: 0;
+    }
+
+    .logo{
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    #logo2, #logo1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-container{
+        position: relative;
+        width: 80px;
+        height: 100%;
+        margin-right: 15px;
+    }
+
+    .church-logo-name-container{
+        position: relative;
+        padding: 0;
+    }
+
+    .church-name-container{
+        left: 90px;
+        top: 10px;
     }
 }
