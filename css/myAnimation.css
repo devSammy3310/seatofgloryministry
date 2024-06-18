@@ -263,3 +263,12 @@
     -webkit-animation: slideUp 1.5s ease-in forwards;
     animation: slideUp 1.5s ease-in forwards;
 }
+
+
+.inView {
+    animation-timeline: view();
+}
+
+.inScroll {
+    animation-timeline: scroll();
+} 
