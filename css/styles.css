@@ -540,4 +540,8 @@ input:checked ~ .slide {
         margin: 0;
         padding: 0;  
     }
+
+    .church-name-container{
+        margin-top: 20px;
+    }
 }
