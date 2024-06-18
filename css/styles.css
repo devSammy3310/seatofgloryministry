@@ -543,7 +543,7 @@ input:checked ~ .slide {
 
     .church-name-container {
         position: absolute;
-        width: 400px;
+        width: 200px;
         left: 100px;
         font-family: "Montserrat";
         background-color: none;
