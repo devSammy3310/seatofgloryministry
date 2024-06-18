@@ -586,4 +586,12 @@ input:checked ~ .slide {
         left: 90px;
         top: 10px;
     }
+
+    .welcome-section {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+    }
 }
