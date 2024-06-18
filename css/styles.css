@@ -549,7 +549,6 @@ input:checked ~ .slide {
         color: white;
         padding: 10px 0;
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: center;
     }
