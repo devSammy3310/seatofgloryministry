@@ -266,7 +266,7 @@
 
 
 .inView {
-    animation-timeline: view();
+    animation-delay: view();
 }
 
 .inScroll {
