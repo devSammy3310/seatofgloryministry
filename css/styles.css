@@ -587,7 +587,7 @@ input:checked ~ .slide {
         top: 10px;
     }
 
-    .welcome-section {
+    .welcome-message-sec {
         display: flex;
         justify-content: center;
         position: relative;
