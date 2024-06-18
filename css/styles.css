@@ -1,13 +1,13 @@
-*::before, *::after{
+*::before, *::after {
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding-top: 85px;
     padding-right: 0;
@@ -18,7 +18,6 @@ body{
 h2 {
     font-size: 26px;
 }
-
 
 nav {
     display: flex;
@@ -44,24 +43,20 @@ h2, h3, h4, h5 {
     padding-bottom: 10px;
 }
 
-
-
-
-
 /**************************************** CLASSES **************************************/
-.carousel{
+.carousel {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-
 .carousel-item {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
 
@@ -71,26 +66,25 @@ h2, h3, h4, h5 {
     z-index: 1; /* Ensure active slide is on top */
 }
 
-.carousel-item > img{
+.carousel-item > img {
     height: auto;
     width: 100%;
     display: block;
-    object-fit:cover;
-    /* object-position:center; */
+    object-fit: cover;
     flex: 0 0 100%; /* Ensure each slide takes full width */
+    -webkit-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out; /* Additional transition effect if needed */
 }
 
-
-.carousel[data-slides]  {
+.carousel[data-slides] {
     margin: 0;
     padding: 0;
     display: flex;
+    -webkit-transition: left 0.5s ease-in-out;
     transition: left 0.5s ease-in-out; /* Smooth slide transition */
 }
 
-
-.carousel-button{
+.carousel-button {
     position: absolute;
     background: none;
     border: none;
@@ -106,31 +100,27 @@ h2, h3, h4, h5 {
 }
 
 .carousel-button:hover,
-.carousel-button:focus{
+.carousel-button:focus {
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.carousel-button:focus{
+.carousel-button:focus {
     outline: 1px solid black;
 }
 
 .carousel-button.prev {
     left: 0;
-    
 }
 
-.carousel-button.next{
+.carousel-button.next {
     right: 0;
 } 
-
-
 
 .carousel-item.active {
     opacity: 1;
     z-index: 1; /* Ensure active slide is on top */
 }
-
 
 .branch {
     font-size: 0.8rem;
@@ -142,16 +132,15 @@ h2, h3, h4, h5 {
     position: relative;
     width: 100%;
     height: 100vh;
-    
 }
 
-.church-name h1{
+.church-name h1 {
     color: #F5BE55;
     font-size: 1.4rem;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
-.church-logo-name-container{
+.church-logo-name-container {
     position: relative;
     background-color: none;
     display: flex;
@@ -175,40 +164,41 @@ h2, h3, h4, h5 {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-   
 }
 
-.church-name-container .church-name{
+.church-name-container .church-name {
     font-size: 20px;
 }
 
-.logo{
+.logo {
     width: 80px;
     border-radius: 20px;
     position: absolute;
     top: 0;
     opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
 
 .active {
     opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
     display: block;
     z-index: 1; /* Ensure active slide is on top */
 }
 
-/* .logo.active{
+/* .logo.active {
     transform: translateY(-50%);
 } */
 
-.sidebar-container input{
+.sidebar-container input {
     display: flex;
     visibility: hidden;
     -webkit-appearance: none;    
 }
 
-.toggle{
+.toggle {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -220,63 +210,63 @@ h2, h3, h4, h5 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.toggle .common{
+.toggle .common {
     position: absolute;
     height: 2px;
     width: 20px;
     background-color: #F5BE55;
     border-radius: 50px;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
-.toggle .top_line{
+.toggle .top_line {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.toggle .middle_line{
+.toggle .middle_line {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.toggle .bottom_line{
+.toggle .bottom_line {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-input:checked ~ .toggle .top_line{
+input:checked ~ .toggle .top_line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
-input:checked ~ .toggle .bottom_line{
+input:checked ~ .toggle .bottom_line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
 
-input:checked ~ .toggle .middle_line{
+input:checked ~ .toggle .middle_line {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-input:checked ~ .slide{
+input:checked ~ .slide {
     transform: translateX(-100%);
 }
-
 
 .slide {
     position: absolute;
     left: 100%;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -287,14 +277,14 @@ input:checked ~ .slide{
     backdrop-filter: blur(10px);
     color: black;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
     box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.1);
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
-
-.sidebar h1{
+.sidebar h1 {
     color: #F5BE55;
     font-weight: 800;
     padding: 10px 0;
@@ -302,38 +292,34 @@ input:checked ~ .slide{
     pointer-events: none;
 }
 
-.sidebar a{
+.sidebar a {
     height: 100%;
     width: 100%;
     font-family: "Montserrat";
     font-size: 20px;
     text-decoration: none;
     color: white;
-    
 }
 
-.sidebar ul{
+.sidebar ul {
     list-style: none;
 }
 
-.sidebar li{
+.sidebar li {
     width: 100%;
 }
 
-
-.nav{
+.nav {
     background-color: #000000;
     padding: 0 10px;
     height: 75px;
 }
-
 
 .nav-link-container {
     display: flex;
     background-color: none;
     flex: 1;
     align-items: center;
-    
 }
 
 .nav-link-container ul {
@@ -341,8 +327,6 @@ input:checked ~ .slide{
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    
-   
 }
 
 .nav-link-container li {
@@ -360,12 +344,9 @@ input:checked ~ .slide{
     align-items: center;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #F5BE55;
 }
-
-
-
 
 .background {
     background-color: white;
@@ -375,37 +356,30 @@ input:checked ~ .slide{
     width: 100%;
     background-image: url('../images/fams.png');
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     z-index: -1;
     filter: blur(5px);
 }
 
-
-.welcome_section{
+.welcome_section {
     display: flex;
     justify-content: center;
     padding: 50px 0;
     position: absolute;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
-    
 }
 
 .welcome-message-sec {
     display: flex;
     background-color: #EFEFF0;
     padding: 30px 100px 30px 30px;
-    
-
 }
 
-
-.pastor-div{
+.pastor-div {
     width: 200px;
-    /* background-color: rgb(199, 199, 199); */
     background-color: #EFEFF0;
     font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
-    
 }
 
 .pastor-div img {
@@ -418,7 +392,7 @@ input:checked ~ .slide{
     margin-top: 15px;
 }
 
-.welcome-message{
+.welcome-message {
     display: flex;
     flex-direction: column;
     font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
@@ -445,7 +419,7 @@ input:checked ~ .slide{
 
 /*************************************** IDs  ******************************************/
 
-#about{
+#about {
     color: #F5BE55;
 }
 
@@ -453,119 +427,111 @@ input:checked ~ .slide{
     height: 75px;
 }
 
-
 /* Laptop styles (1024 and above) */
-@media (min-width:1024px) {
-    .toggle{
+@media (min-width: 1024px) {
+    .toggle {
         display: none;
         pointer-events: none;
     }
 
-    .background{
+    .background {
         background-color: white;
         height: 450px;
         width: 100%;
         background-position: top;
-        /* filter: blur(3px); */
     }
-
-
 }
 
 /* Tablet styles (601px to 1024px) */
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
-    .hide{
+    .hide {
         display: none;
     }
 
-    .welcome-message-sec{
+    .welcome-message-sec {
         display: flex;
         flex-direction: column;
     }
 
-    .welcome-message{
+    .welcome-message {
         margin-top: 40px;
     }
 
-    .pastor-div{
+    .pastor-div {
         width: 100%;
     }
 
-    .welcome_section h1{
+    .welcome_section h1 {
         font-size: 1.4rem;
         width: 100%;
         color: #F5BE55;
         font-family: "Poppins", Helvetica, Arial, sans-serif;
     }
 
-    .background{
+    .background {
         background-color: white;
         height: 450px;
         width: 100%;
         background-position: top;
-        /* filter: blur(3px); */
     }
 
-    .carousel-item p{
+    .carousel-item p {
         font-size: 13px;
     }
 
-    .carousel-item h1{
+    .carousel-item h1 {
         font-size: 32px;
     }
 
-    .carousel-button{
+    .carousel-button {
         font-size: 3rem;
     }
-
 }
 
-
 /* Phone styles (up to 600px) */
-@media only screen and (max-width: 600px){
-
-    .hide{
+@media only screen and (max-width: 600px) {
+    .hide {
         display: none;
     }
 
-    .sidebar{
+    .sidebar {
         width: 100%;
     }
 
-    .background{
+    .background {
         height: 450px;
         width: 100%;
     }
 
-    .church-name h1{
+    .church-name h1 {
         font-size: 1rem;
     }
 
-    .branch{
+    .branch {
         font-size: 8.3px;
     }
 
-    .welcome_section h1{
+    .welcome_section h1 {
         font-size: 1.4rem;
         width: 100%;
         color: #F5BE55;
         font-family: "Poppins", Helvetica, Arial, sans-serif;
     }
 
-    .welcome-message-sec{
+    .welcome-message-sec {
         display: flex;
         flex-direction: column;
     }
 
-    .welcome-message h2{
+    .welcome-message h2 {
         margin-top: 70px;
     }
 
-    .pastor-div{
+    .pastor-div {
         width: 100%;
     }
 
-    .welcome-message{
+    .welcome-message {
         font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
         line-height: 1.8em;
         flex: 1;
@@ -574,5 +540,4 @@ input:checked ~ .slide{
         margin: 0;
         padding: 0;  
     }
-
 }
