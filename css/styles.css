@@ -546,7 +546,7 @@ input:checked ~ .slide {
         left: 200px;
         font-family: "Montserrat";
         background-color: none;
-        color: white;
+        color: blue;
         padding: 10px 0;
         display: flex;
         flex-direction: column;
