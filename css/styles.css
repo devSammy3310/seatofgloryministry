@@ -598,6 +598,7 @@ input:checked ~ .slide{
 
     .welcome-message{
         width: 90vw;
+        padding-right: 10px;
     }
 
     .carousel-item p{
