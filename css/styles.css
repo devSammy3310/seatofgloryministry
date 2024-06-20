@@ -596,4 +596,8 @@ input:checked ~ .slide{
         padding-top: 200px;
     }
 
+    .welcome-message{
+        width: 90vw;
+    }
+
 }
