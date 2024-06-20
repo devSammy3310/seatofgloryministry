@@ -393,9 +393,6 @@ input:checked ~ .slide{
     
 }
 
-.welcome-message p{
-    opacity: 0;
-}
 
 .welcome-message-sec {
     display: flex;
