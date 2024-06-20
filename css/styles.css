@@ -166,6 +166,7 @@ h2, h3, h4, h5 {
 }
 
 .church-name-container {
+    width: 400px;
     position: absolute;
     left: 100px;
     font-family: "Montserrat";
@@ -173,7 +174,7 @@ h2, h3, h4, h5 {
     color: white;
     padding: 10px 0;
     display: flex;
-    flex: 1;
+
     flex-direction: column;
     justify-content: center;
    
@@ -543,7 +544,7 @@ input:checked ~ .slide{
     }
 
     .church-name h1{
-        font-size: 1.2rem;
+        font-size: 15px;
     }
 
     .branch{
