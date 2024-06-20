@@ -157,6 +157,7 @@ h2, h3, h4, h5 {
     display: flex;
     flex: 1;
     align-items: center;
+    justify-content: flex-start;
     padding: 0 15px;
 }
 
@@ -284,7 +285,6 @@ input:checked ~ .slide{
     width: 250px;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.2);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: black;
     flex-direction: column;
@@ -392,6 +392,10 @@ input:checked ~ .slide{
     
 }
 
+.welcome-message p{
+    opacity: 0;
+}
+
 .welcome-message-sec {
     display: flex;
     background-color: #EFEFF0;
@@ -446,119 +450,127 @@ input:checked ~ .slide{
 
 /*************************************** IDs  ******************************************/
 
-#about {
-    color: #F5BE55;
+#about{
+    color: #000000;
 }
 
 #logo2 {
     height: 75px;
 }
 
+
 /* Laptop styles (1024 and above) */
-@media (min-width: 1024px) {
-    .toggle {
+@media (min-width:1024px) {
+    .toggle{
         display: none;
         pointer-events: none;
     }
 
-    .background {
+    .background{
         background-color: white;
         height: 450px;
         width: 100%;
         background-position: top;
+        /* filter: blur(3px); */
     }
+
+
 }
 
 /* Tablet styles (601px to 1024px) */
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
-    .hide {
+    .hide{
         display: none;
     }
 
-    .welcome-message-sec {
+    .welcome-message-sec{
         display: flex;
         flex-direction: column;
     }
 
-    .welcome-message {
+    .welcome-message{
         margin-top: 40px;
     }
 
-    .pastor-div {
+    .pastor-div{
         width: 100%;
     }
 
-    .welcome_section h1 {
+    .welcome_section h1{
         font-size: 1.4rem;
         width: 100%;
         color: #F5BE55;
         font-family: "Poppins", Helvetica, Arial, sans-serif;
     }
 
-    .background {
+    .background{
         background-color: white;
         height: 450px;
         width: 100%;
         background-position: top;
+        /* filter: blur(3px); */
     }
 
-    .carousel-item p {
+    .carousel-item p{
         font-size: 13px;
     }
 
-    .carousel-item h1 {
+    .carousel-item h1{
         font-size: 32px;
     }
 
-    .carousel-button {
+    .carousel-button{
         font-size: 3rem;
     }
+
 }
 
+
 /* Phone styles (up to 600px) */
-@media only screen and (max-width: 600px) {
-    .hide {
+@media only screen and (max-width: 600px){
+
+    .hide{
         display: none;
     }
 
-    .sidebar {
+    .sidebar{
         width: 100%;
     }
 
-    .background {
+    .background{
         height: 450px;
         width: 100%;
     }
 
-    .church-name h1 {
-        font-size: 0.4rem;
+    .church-name h1{
+        font-size: 1.5rem;
     }
 
-    .branch {
+    .branch{
         font-size: 8.3px;
     }
 
-    .welcome_section h1 {
+    .welcome_section h1{
         font-size: 1.4rem;
         width: 100%;
         color: #F5BE55;
         font-family: "Poppins", Helvetica, Arial, sans-serif;
     }
 
-    .welcome-message-sec {
+    .welcome-message-sec{
         display: flex;
         flex-direction: column;
     }
 
-    .welcome-message h2 {
+    .welcome-message h2{
         margin-top: 70px;
     }
 
-    .pastor-div {
+    .pastor-div{
         width: 100%;
     }
 
-    .welcome-message {
+    .welcome-message{
         font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
         line-height: 1.8em;
         flex: 1;
@@ -568,54 +580,4 @@ input:checked ~ .slide{
         padding: 0;  
     }
 
-    .church-name-container {
-        position: absolute;
-        width: 200px;
-        font-family: "Montserrat";
-        background-color: none;
-        color: white;
-        padding: 10px 0;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .nav{
-        padding: 0;
-    }
-
-    .logo{
-        border-radius: 20px;
-        position: absolute;
-        top: 0;
-        transition: opacity 1s ease-in-out;
-    }
-
-    #logo2, #logo1{
-        height: 100%;
-        width: 100%;
-    }
-
-    .logo-container{
-        position: relative;
-        width: 80px;
-        height: 100%;
-        margin-right: 15px;
-    }
-
-    .church-logo-name-container{
-        position: relative;
-        padding: 0;
-    }
-
-    .church-name-container{
-        left: 90px;
-        top: 10px;
-    }
-
-    .carousel {
-        width: 100%;
-        height: 50vh;
-    }
 }
