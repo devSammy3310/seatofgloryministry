@@ -54,16 +54,20 @@ h2, h3, h4, h5 {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 
 .carousel-item {
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 
 .carousel-item[data-active] {
     display: block;
@@ -286,7 +290,6 @@ input:checked ~ .slide{
     width: 250px;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.2);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: black;
     flex-direction: column;
@@ -405,7 +408,7 @@ input:checked ~ .slide{
 
 
 .pastor-div{
-    width: 200px;
+    width: 250px;
     /* background-color: rgb(199, 199, 199); */
     background-color: #EFEFF0;
     font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
@@ -450,7 +453,7 @@ input:checked ~ .slide{
 /*************************************** IDs  ******************************************/
 
 #about{
-    color: #F5BE55;
+    color: #F5BE55 ;
 }
 
 #logo2 {
@@ -586,28 +589,26 @@ input:checked ~ .slide{
     .welcome-section {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
+        
         
     }
 
     body{
-        padding-top: 200px;
+        padding-top: 150px;
     }
 
     .welcome-message{
-        flex: 1;
-        width: 90vw;
-        padding-right: 20px;
+        width: 100%;
+
     }
 
     .welcome-message-sec {
         display: flex;
-        background-color: #EFEFF0;
-        /* padding: 30px 100px 30px 30px; */
-        
-    
+        background-color: #EFEFF0;    
     }
 
     .carousel-item p{
@@ -615,5 +616,7 @@ input:checked ~ .slide{
         width: 200px;
     }
 
-
+    .welcome_section{
+        padding-top: 0;
+    }
 }
