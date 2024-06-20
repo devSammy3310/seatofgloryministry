@@ -600,4 +600,9 @@ input:checked ~ .slide{
         width: 90vw;
     }
 
+    .carousel-item p{
+        text-align: center;
+        width: 200px;
+    }
+
 }
