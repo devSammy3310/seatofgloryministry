@@ -690,3 +690,30 @@ input:checked ~ .slide{
         height: 100%;
     }
 }
+
+
+@media (max-width: 500px) {
+    .content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .background-video {
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container{
+        height: 30%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 500px) {
+    .background-video {
+        width: auto;
+        height: 100%;
+    }
+}
