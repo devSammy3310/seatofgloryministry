@@ -44,6 +44,8 @@ h2, h3, h4, h5 {
 
 
 /**************************************** CLASSES **************************************/
+
+
 .carousel{
     width: 100%;
     height: 100vh;
@@ -157,26 +159,29 @@ h2, h3, h4, h5 {
     flex: 1;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 15px;
+    padding: 0;
 }
 
 .church-logo-name-container img {
-    margin-bottom: 10px;
+    
 }
 
 .church-name-container {
     width: 400px;
     position: absolute;
-    left: 100px;
+    left: 65px;
     font-family: "Montserrat";
     background-color: none;
     color: white;
     padding: 10px 0;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
    
+}
+
+.church-name-container h1, .church-name-container p{
+    line-height: 20px;
 }
 
 .church-name-container .church-name{
@@ -184,13 +189,22 @@ h2, h3, h4, h5 {
 }
 
 .logo{
-    width: 80px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     position: absolute;
-    top: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
+.logo-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
 
 .active {
     opacity: 1;
@@ -275,6 +289,8 @@ input:checked ~ .slide{
 
 .slide {
     position: absolute;
+    /* left: 70%; */
+    background-color: #000000;
     left: 102%;
 }
 
@@ -288,7 +304,6 @@ input:checked ~ .slide{
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    color: black;
     flex-direction: column;
     align-items:flex-start;
     justify-content: flex-start;
@@ -460,9 +475,6 @@ input:checked ~ .slide{
     color: #F5BE55 ;
 }
 
-#logo2 {
-    height: 75px;
-}
 
 
 /* Laptop styles (1024 and above) */
@@ -630,5 +642,18 @@ input:checked ~ .slide{
     .bible-verse{
         line-height: 2em;
         
+    }
+
+    .logo-container{
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
     }
 }
