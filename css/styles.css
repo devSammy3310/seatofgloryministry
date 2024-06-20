@@ -610,7 +610,7 @@ input:checked ~ .slide{
     .carousel-item p, .carousel-item h1{
         text-shadow: 0 1px 3px rgba(97, 85, 85, 0.699);
         text-align: center;
-        width: 340px;
+        width: 313px;
         font-size: 60px;
         
     }
