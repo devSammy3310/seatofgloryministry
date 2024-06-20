@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/myAnimation.css">
     <link rel="stylesheet" href="css/watchworld-section.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
 
 
 </head>
@@ -48,7 +52,7 @@
         </div>
 
         <div class="nav-link-container">
-            <ul class="slideLeft">
+            <ul class="animate slideLeft">
                 <li class="hide"><a href="/">Home</a></li>
                 <li class="hide"><a id="about" href="/about">About</a></li>
                 <li class="hide"><a href="/services">Services</a></li>
@@ -60,20 +64,20 @@
     <div class="welcome-section">
         <div class="background"></div>
         <div class="welcome_section">
-            <h1 class="slideUp">Welcome</h1>
+            <h1 class="animate__animated animate__hinge animate__infinite">Welcome</h1>
         </div>
     </div>
 
     
     <section class="welcome-message-sec">
-        <div class="pastor-div slideRight inView" id="pastor-div">
+        <div class="pastor-div animate slideRight" id="pastor-div">
             <img class="pastor-image" src="images/pas_emma.JPG" alt="pastor's image">
             <p class="">MOG Emmanuel</p>
         </div>
 
-        <div class="welcome-message fade-in">
+        <div class="welcome-message animate slideLeft">
             <h2>Welcome Address</h2>
-            <p>Welcome to our new and inspiring website. We extend our heartfelt gratitude to the members and friends of Christ Apostolic Church, 
+            <p class="animate slideUp">Welcome to our new and inspiring website. We extend our heartfelt gratitude to the members and friends of Christ Apostolic Church, 
                 Seat of Glory Prayer Mountain Ministry, Nigeria, and Overseas, for their unwavering support in spreading the divine presence of God 
                 to the nations and peoples of the world and in demonstrating the character of the Spirit.
                 We invite you to share your comments with us through the Contact Us page. We hope you find this website to be a blessing. Thank you for joining us on this journey, in Jesus' name.</p>
@@ -104,6 +108,7 @@
 
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
