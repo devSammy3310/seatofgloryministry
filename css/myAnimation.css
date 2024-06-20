@@ -55,13 +55,16 @@
 
 @keyframes slideUp {
     0% {
+        -webkit-transform: translateY(100%);
         transform: translateY(100%);
         opacity: 0;
     }
     100% {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
         opacity: 1;
     }
+
 }
 
 @-webkit-keyframes slideLeft {
@@ -191,20 +194,21 @@
 }
 
 .slideUp.in-view {
-    opacity: 1;
     -webkit-animation: slideUp 1s ease-in forwards;
     -moz-animation: slideUp 1s ease-in forwards;
     animation: slideUp 1s ease-in forwards;
+    opacity: 1;
 }
 
 
-.animate__animated.animate__hinge{
+.animate__animated.animate__bounce{
     --animate-duration: 3s;
+
     
 
 }
 
 
-.animate, .animate__animated{
+.animate{
     opacity: 0;
 }
