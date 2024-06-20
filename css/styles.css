@@ -271,7 +271,7 @@ input:checked ~ .slide{
     opacity: 1;
     transition: opacity 1 ease-in-out;
     background-color: #000000;
-    transform: translateY(49%);
+    transform: translateY(40%);
 }
 
 
