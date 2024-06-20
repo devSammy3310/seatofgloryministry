@@ -268,41 +268,43 @@ input:checked ~ .toggle .middle_line{
 }
 
 input:checked ~ .slide{
-    opacity: 1;
-    transition: opacity 1 ease-in-out;
     background-color: #000000;
-    transform: translateY(40%);
+    transform: translateX(-100%);
 }
 
 
 .slide {
     position: absolute;
-    right: 80%;
+    left: 100%;
 }
 
 .sidebar{
-    border-bottom: 2px solid #F5BE55;
-    padding-top: 10px;
     position: fixed;
-    opacity: 0;
     top: 0;
-    left: -20px;
     right: 0;
-    height: 22vh;
-    width: 100px;
-    z-index: 4;
-    background-color: #000000;
+    height: 100vh;
+    width: 250px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    color: black;
     flex-direction: column;
+    align-items:flex-start;
     justify-content: flex-start;
     box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.1);
     transition: 0.5s ease-in-out;
 }
 
 
+.sidebar h1{
+    color: #F5BE55;
+    font-weight: 800;
+    padding: 10px 0;
+    text-align: left;
+    pointer-events: none;
+}
 
 .sidebar a{
-    padding-left: 45px;
     height: 100%;
     width: 100%;
     font-family: "Montserrat";
