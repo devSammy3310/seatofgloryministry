@@ -398,7 +398,7 @@ input:checked ~ .slide{
 .welcome-message-sec {
     display: flex;
     background-color: #EFEFF0;
-    padding: 30px 100px 30px 30px;
+    padding: 30px 30px 30px 30px;
     
 
 }
